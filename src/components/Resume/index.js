@@ -1,6 +1,7 @@
 import React from 'react'
 import { Row, Col, Container, ProgressBar } from 'react-bootstrap'
-import ResumeBlock from './ResumeBlock'
+import ResumeBlock from './EductionBlock'
+import ExperienceBlock from './ExperienceBlock'
 // import { dataResume, dataSkills } from '../../services/AppService'
 import './style.css'
 
@@ -10,8 +11,7 @@ export default function index({skills,education,experience}) {
             <Row>
                 <Col md='10' sm='12'>
                     <h2 className='section__title'>Resume_</h2>
-                    <p className='section__description'>Désireux de développer constamment mes compétences afin d'assurer mon évolution  professionnelle. Passionné par
-                        l'univers de développement informatique et doté d'une grande curiosité, je sais faire preuve d'une capacité d'écoute et d'autonomie.
+                    <p className='section__description'>strong technical and problem-solving skills. Highly motivated and passionate about technology with a comprehensive understanding of programming languages, computer hardware and software, and algorithms. Possess excellent communication and interpersonal skills with the ability to work with teams and independently.
                     </p>
                 </Col>
             </Row>
@@ -25,7 +25,7 @@ export default function index({skills,education,experience}) {
                 <Col md='8' sm='12'>
                     <div className='resume-title'>experience</div>
                     <div className='resume-list'>
-                        {experience?.map(el=><ResumeBlock data={el}/>)}   
+                        {experience?.map(el=><ExperienceBlock data={el}/>)}   
                     </div>
                 </Col>
             </Row>

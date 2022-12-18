@@ -31,7 +31,7 @@ export default function Header({data}) {
                                 </tr>
                                 <tr>
                                     <td>address:</td>
-                                    <td>{data['country']}, {data['ville']}</td>
+                                    <td>{data['country']}, {data['city']}</td>
                                 </tr>                  
                                </tbody>
                            </table>

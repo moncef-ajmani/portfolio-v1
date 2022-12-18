@@ -7,7 +7,7 @@ export default function Card({ ProjectItem }) {
         
         <div className='project-container'>
             {ProjectItem?.map(el=>{
-                const { id, image , title , description , technologies } = el
+                const { id, image , title , description , technologies, url } = el
                 return(
                         <div className="project__card" key={id}>
                             <Row>
@@ -26,7 +26,7 @@ export default function Card({ ProjectItem }) {
                                                 )
                                             })}
                                         </div>
-                                        <div className='project__card-link' href="moncefajmani.com">www.moncefajmani.com</div>
+                                        <div className='project__card-link' href={url}>{url}</div>
                                     </div>
                                 </Col>
                             </Row>
