@@ -1,9 +1,9 @@
 export const data = {
   'personal-details':{
     bg_image:"",
-    hero_img:'',
-    cv:"",
-    title:'',
+    hero_img:"",
+    cv:"https://cdn.discordapp.com/attachments/881903437246246986/1054444397699272714/moncef_ajmani_cv.pdf",
+    title:'Computer Science Engineering Student',
     full_name:'Moncef Ajmani',
     email:'moncef.ajmani@gmail.com',
     phone:'+212 636 175 915',
@@ -16,10 +16,6 @@ export const data = {
     {
       name:"Artificial inteligence",
       description:""
-    },
-    {
-      name:"",
-      description:""
     }
   ],
   'projects':[
@@ -27,7 +23,7 @@ export const data = {
       id:1,
       title:"Real-time facial emotion recognition using artificial intelligence",
       technologies:["Python","OpenCV","TensorFlow","Deep-Learning","Keras"],
-      image:"https://cdn.vox-cdn.com/thumbor/6UW4nVdYfCCWgV7EwRhRzguLgv8=/0x0:1592x1064/1400x1050/filters:focal(796x532:797x533)/cdn.vox-cdn.com/uploads/chorus_asset/file/18334536/ll_1.png",
+      image:"https://cdn.discordapp.com/attachments/881903437246246986/1054364318306684998/fer.png",
       status:"public",
       category:"Artificial inteligence",
       description:"This project aims to develop an AI-based facial emotion recognition system using Python. It will use the latest computer vision and machine learning algorithms to accurately detect different facial expressions and classify them into corresponding emotions.",
@@ -36,11 +32,11 @@ export const data = {
     {
       id:2,
       title:"XO Gaming Web Application against artificial intellligence using mini-max algorithm",
-      technologies:["React.js","Node.js","Express.js","Socket.io","Mini-Max aglorithm"],
-      image:"",
+      technologies:["React.js","Mini-Max aglorithm"],
+      image:"https://cdn.discordapp.com/attachments/881903437246246986/1054364297448390697/xo.png",
       status:"public",
       category:"Artificial inteligence",
-      description:"",
+      description:"XO Gaming Web Application Against Artificial Intelligence Using Mini-Max Algorithm! This project is a web application created using React.js that allows users to play the classic game of tic-tac-toe against an AI opponent.",
       url:"https://xo.devcef.com/"
     }
   ],
@@ -117,6 +113,13 @@ export const data = {
       <li>Création d’API REST pour l’accès et la manipulation des données.</li>
       <li>Tester et deboguer le code pour assurer la fonctionnalité.</li></ul>`,
     }
-  ]
+  ],
+  'social-media':{
+    facebook:"https://www.facebook.com/moncif.ajmani.1/",
+    instagram:"https://www.instagram.com/moncef_ajmani/",
+    linkedin:"https://www.linkedin.com/in/moncefajmani/",
+    github:"https://github.com/moncef-ajmani",
+    codepen:"https://codepen.io/moncef-ajmani"
+  }
 }
   

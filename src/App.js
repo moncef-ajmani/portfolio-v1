@@ -12,12 +12,12 @@ function App() {
   return (
       <div className='App'>
         <Menu/>
-        <Header data={data['personal-details']}/>
-        <Hello summary={data['personal-details'].summary}/>
+        <Header data={data['personal-details']} social={data['social-media']}/>
+        <Hello summary={data['personal-details'].summary} cv_link={data['personal-details'].cv}/>
         <hr/>
         <Resume skills={data['skills']} education={data['education']} experience={data['experience']}/>
         <Projects projects={data['projects']} categories={data['categories']}/>
-        <Footer data={data['personal-details']}/>
+        <Footer data={data['personal-details']} social={data['social-media']}/>
       </div> 
   );
 }

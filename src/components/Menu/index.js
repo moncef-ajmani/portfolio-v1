@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react'
 import { Container } from 'react-bootstrap'
+// import { FontAwesomeIcon } from 'react-fontawesome'
 import './style.css'
 
 export default function Menu() {
@@ -26,13 +27,13 @@ export default function Menu() {
                 <Container>
                     <div className={`menu__wrapper ${background}`}>
                             <ul>
-                                {links.map(el=><li><a href={`#${el}`}>{el}</a></li>)}
+                                {links.map((el,i)=><li key={i}><a href={`#${el}`}>{el}</a></li>)}
                             </ul>
                     </div>
                     <div className={`menu__wrapper-mobile d-lg-none ${background}`} onClick={openMobileMenu}>
                         <div className='menu__mobile-button'>
                             <span>
-                                <i class="fas fa-bars"></i>
+                                <i className="fas fa-bars"></i>
                             </span>
                             
                         </div>
@@ -40,9 +41,9 @@ export default function Menu() {
                 </Container>
             </div>
             <div className='menu__mobile' style={{display}}>
-                <div className='menu__mobile-close' onClick={closeMobileMenu}><i class="fas fa-times"></i></div>
+                <div className='menu__mobile-close' onClick={closeMobileMenu}><i class="fa-solid fa-bars"></i></div>
                 <ul>
-                    {links.map(el=><li onClick={closeMobileMenu}><a href={`#${el}`}>{el}</a></li>)}
+                    {links.map((el,i)=><li onClick={closeMobileMenu}key={i}><a href={`#${el}`}>{el}</a></li>)}
                 </ul>
             </div>
         </>
