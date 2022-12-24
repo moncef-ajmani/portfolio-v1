@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Container, Row, Col, Form } from 'react-bootstrap'
 import './style.css'
 
-export default function Footer({data}) {
+export default function Footer({data,social}) {
+
     return (
         <div id="contact" className='footer'>
             <Container className='contact section'>
@@ -21,10 +22,6 @@ export default function Footer({data}) {
                                     <td>{data['phone']}</td>
                                 </tr>
                                 <tr>
-                                    <td>Insta:</td>
-                                    <td>moncef_ajmani</td>
-                                </tr>
-                                <tr>
                                     <td>email</td>
                                     <td>{data['email']}</td>
                                 </tr>                
@@ -33,17 +30,17 @@ export default function Footer({data}) {
                         </div>
                         <div className='contacts__social'>
                             <ul>
-                                <li><a href='/'>Facebook</a></li>
-                                <li><a href='/'>Linkdin</a></li>
-                                <li><a href='/'>Github</a></li>
-                                <li><a href='/'>Instagram</a></li>
+                                <li><a href={social['github']}>Github</a></li>
+                                <li><a href={social['linkedin']}>Linkedin</a></li>
+                                <li><a href={social['codepen']}>CodePen</a></li>
+                                <li><a href={social['instagram']}>Instagram</a></li>
                             </ul>
                         </div>
                     </Col>
                     <Col lg='5' md='7' sm='12'>
                         <div className='contacts__form'>
                             <p className='contacts__form-title'>Or just write me a letter here_</p>
-                            <Form>
+                            <Form >
                                 <Form.Group className="mb-3" controlId="formBasicName">
                                     <Form.Control type="text" placeholder="Your name" />
                                 </Form.Group>
@@ -51,9 +48,9 @@ export default function Footer({data}) {
                                     <Form.Control type="email" placeholder="Your e-mail" />
                                 </Form.Group>
                                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Control as="textarea" rows="4" placeholder="Type the message here" />
+                                    <Form.Control as="textarea" rows="4" placeholder="Type the message here"/>
                                 </Form.Group>
-                                <button className="site-btn site-btn--form" type="submit" value="Send">Send</button>
+                                <button className="site-btn site-btn--form" type="submit" value="Send">Send Email</button>
                             </Form>
                         </div>
                     </Col>

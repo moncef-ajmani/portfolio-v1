@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import img from '../../images/img2.jpg'
 import './style.css'
 
-export default function Header({data}) {
+export default function Header({data,social}) {
     return (
         <header className='header'>
             <Container>
@@ -37,9 +37,9 @@ export default function Header({data}) {
                            </table>
                         </div>
                         <div className='profile__social'>
-                            <a href="/" target='_blank' rel="noopener"><i className="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/moncefajmani/" target='_blank' rel="noreferrer"><i class="fab fa-linkedin"></i></a>
-                            <a href="/" target='_blank' rel="noopener"><i className="fab fa-facebook-square"></i></a>
+                            <a href={social['github']} target='_blank' rel="noopener"><i className="fab fa-github"></i></a>
+                            <a href={social['linkedin']} target='_blank' rel="noreferrer"><i className="fab fa-linkedin"></i></a>
+                            <a href={social['codepen']} target='_blank' rel="noopener"><i class="fa-brands fa-codepen"></i></a>
                         </div>
                     </Col>
                 </Row>

@@ -20,13 +20,14 @@ export default function Card({ ProjectItem }) {
                                         <div className='project__card-description'>{description}</div>
                                         <div className='project__card-stack'>used stack:</div>
                                         <div className='project__technologies'>
-                                            {technologies.map(el=>{
+                                            {technologies.map((el,i)=>{
                                                 return(
-                                                    <div className='technologie'>{el}</div>
+                                                    <div className='technologie' key={i}>{el}</div>
                                                 )
                                             })}
                                         </div>
-                                        <div className='project__card-link' href={url}>{url}</div>
+                                        <div className='project__card-link' >
+                                            <a href={url}>{url}</a></div>
                                     </div>
                                 </Col>
                             </Row>

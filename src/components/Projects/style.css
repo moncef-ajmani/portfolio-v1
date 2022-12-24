@@ -54,7 +54,9 @@
     line-height: 20px;
     text-align: right;
     text-decoration: underline;
-    cursor: pointer;
+  }
+  .project__card-link a{
+    color: #555;
   }
   .nav__category {
     display: flex;
