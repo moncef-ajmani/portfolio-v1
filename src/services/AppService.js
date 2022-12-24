@@ -4,7 +4,7 @@ export const data = {
     hero_img:'',
     cv:"",
     title:'',
-    full_name:'Moncef Ajmani',
+    full_name:'Doha Maghni',
     email:'moncef.ajmani@gmail.com',
     phone:'+212 636 175 915',
     country:'Morocco',
