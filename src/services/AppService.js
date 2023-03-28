@@ -1,6 +1,7 @@
 export const data = {
   'personal-details':{
     bg_image:"",
+
     hero_img:"",
     cv:"https://cdn.discordapp.com/attachments/881903437246246986/1056277021753348197/moncef_ajmani_cv.pdf",
     title:'Computer Science Engineering Student',
