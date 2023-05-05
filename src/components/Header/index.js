@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import img from '../../images/img2.jpg'
+import img from '../../images/hero.webp'
 import './style.css'
 
 export default function Header({data,social}) {
