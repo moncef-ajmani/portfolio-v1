@@ -1,15 +1,20 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import img from '../../images/hero.webp'
 import './style.css'
 
 export default function Header({data,social}) {
+    const header_style= {
+        background:`linear-gradient(54deg,rgba(45, 45, 45, 0.95) 34%,rgba(45, 45, 45, 0.95)),url(${data["bg_img"]})`,
+        backgroundPosition: '50% center',
+        backgroundSize: 'cover',
+        marginBottom: '40px',
+    }
     return (
-        <header className='header'>
+        <header className='header' style={header_style}> 
             <Container>
                 <Row className='profile'>
                     <div className='col-4 profile__avatar'>
-                        <img src={img} alt="avatar"/>
+                        <img src={data['hero_img']} alt="avatar"/>
                     </div>
                     <Col sm='12' md='8'>
                         <p className='profile__name'>{data['full_name']}_</p>

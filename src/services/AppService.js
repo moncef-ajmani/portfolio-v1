@@ -1,8 +1,7 @@
 export const data = {
   'personal-details':{
-    bg_image:"",
-
-    hero_img:"",
+    bg_img:"https://ik.imagekit.io/vnbsqyll0/bg.webp?updatedAt=1683245861482",
+    hero_img:"https://ik.imagekit.io/vnbsqyll0/hero.webp?updatedAt=1683245854664",
     cv:"https://cdn.discordapp.com/attachments/881903437246246986/1056277021753348197/moncef_ajmani_cv.pdf",
     title:'Computer Science Engineering Student',
     full_name:'Moncef Ajmani',
@@ -24,7 +23,7 @@ export const data = {
       id:1,
       title:"Real-time facial emotion recognition using artificial intelligence",
       technologies:["Python","OpenCV","TensorFlow","Deep-Learning","Keras"],
-      image:"https://cdn.discordapp.com/attachments/881903437246246986/1054364318306684998/fer.png",
+      image:"https://ik.imagekit.io/vnbsqyll0/fer.webp?updatedAt=1683245850492",
       status:"public",
       category:"Artificial inteligence",
       description:"This project aims to develop an AI-based facial emotion recognition system using Python. It will use the latest computer vision and machine learning algorithms to accurately detect different facial expressions and classify them into corresponding emotions.",
@@ -34,11 +33,11 @@ export const data = {
       id:2,
       title:"XO Gaming Web Application against artificial intellligence using mini-max algorithm",
       technologies:["React.js","Mini-Max aglorithm"],
-      image:"https://cdn.discordapp.com/attachments/881903437246246986/1054364297448390697/xo.png",
+      image:"https://ik.imagekit.io/vnbsqyll0/xo.webp?updatedAt=1683245851803",
       status:"public",
       category:"Artificial inteligence",
       description:"XO Gaming Web Application Against Artificial Intelligence Using Mini-Max Algorithm! This project is a web application created using React.js that allows users to play the classic game of tic-tac-toe against an AI opponent.",
-      url:"https://xo.devcef.com/"
+      // url:"comming soon..."
     }
   ],
   'skills':[

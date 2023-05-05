@@ -1,10 +1,4 @@
 .header{
-    background: linear-gradient(
-        54deg,
-        rgba(45, 45, 45, 0.95) 34%,
-        rgba(45, 45, 45, 0.95)
-      ),
-      url(../../images/bg.webp);
     background-position: 50% center;
     background-size: cover;
     margin-bottom: 40px;
